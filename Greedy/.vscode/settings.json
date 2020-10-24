@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/usr/bin/python3",
+    "files.associations": {
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "iostream": "cpp"
+    }
+}
