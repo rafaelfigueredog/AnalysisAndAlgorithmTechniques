@@ -33,7 +33,7 @@ int minStops(int d, int m, int n, vector<int> &stops) {
 
         // parada obrigatória;
         if (i < n) {
-            kickoff = (tank < 0)? i - 1: i ;
+            kickoff = i;
             last = i - 1;
             ans++;
             tank = m;

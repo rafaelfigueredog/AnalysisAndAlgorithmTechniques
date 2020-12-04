@@ -71,9 +71,7 @@ double closestPairProblemDVC(Point *cordenates, int left, int right) {
     }
 
     /* qsort(front, fi, sizeof(Point),  compy); */
-
-    std::sort(front.begin(), front.end(), compy); 
-
+    std::sort(front.begin(), front.end(), compy);
     for (int k = 0; k < front.size(); k++) {
         for (int x = k+1; x < front.size(); x++) {
             if ( abs(front[x].y - front[k].y) > D) break; 
@@ -92,11 +90,9 @@ double closestPairProblem(Point *cordenates, int n) {
 }
 
 int main () {
-
     int n; 
     Point p;
     Point cordenates[10002];
-    
     while (1) {
         scanf("%d", &n); 
         if (n == 0) break; 
@@ -106,5 +102,4 @@ int main () {
         if ( solution < 10000 ) printf("%.4lf\n", solution); 
         else printf("INFINITY\n");  
     }
-
 }
